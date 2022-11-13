@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+
+    <h1>Ejercicio 7</h1>
+    <p>Algoritmo para leer la nota de diez estudiantes y mostrar cantidad de aprobados y reprobados</p>
+    <script>
+
+    function alumnos(){
+    var reprobados
+    var aprobados
+    var nota 
+
+    reprobados=0;
+    aprobados=0;
+   
+
+    for(let i=1; i<11; i++){
+    nota=prompt("Ingresar la nota");
+
+    if(nota<6){
+        reprobados= reprobados+1;
+    }
+    else{
+        aprobados = aprobados+1;
+    }
+
+    }
+    window.alert("El total de alumnos reprobados es:" +  reprobados)
+window.alert("El total de alumnos aprobados es:" +  aprobados)
+} 
+
+alumnos()
+ 
+
+
+
+
+    </script>
+</body>
+</html>

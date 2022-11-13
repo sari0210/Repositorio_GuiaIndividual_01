@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<h1>Calculadora</h1>
+
+<body>
+    <form name="calculadora">
+        Ingresar primer numero <input type="number" name="n1"><br><br>
+        Ingrear segundo numero <input type="number" name="n2"><br><br>
+         Selecionar operación<br><br>
+        <input type="button" name="button1" value="sumar" onclick="suma()">
+       
+        <input type="button" name="button1" value="restar" onclick="resta()">
+        <input type="button" name="button1" value="multiplicar" onclick="multiplicar()">
+        <input type="button" name="button1" value="dividir" onclick="dividir()">
+        <br><br><br>
+        El resultado es:
+        <input type="number" name="resultado">
+    </form>
+
+    <script>
+
+        function suma(){
+            let n1, n2, resultado;
+            n1 = parseInt(document.calculadora.n1.value);
+            n2 = parseInt(document.calculadora.n2.value);
+            resultado=0
+            resultado=n1+n2;
+            document.calculadora.resultado.value=resultado;
+        }
+
+        function resta(){
+            let n1, n2, resultado;
+            n1 = parseInt(document.calculadora.n1.value);
+            n2 = parseInt(document.calculadora.n2.value);
+            resultado=0
+            resultado=n1-n2;
+            document.calculadora.resultado.value=resultado;
+        }
+
+        function multiplicar(){
+            let n1, n2, resultado;
+            n1 = parseInt(document.calculadora.n1.value);
+            n2 = parseInt(document.calculadora.n2.value);
+            resultado=0
+            resultado=n1*n2;
+            document.calculadora.resultado.value=resultado;
+        }
+
+        function dividir(){
+            let n1, n2, resultado;
+            n1 = parseInt(document.calculadora.n1.value);
+            n2 = parseInt(document.calculadora.n2.value);
+            resultado=0
+            resultado=n1/2;
+            document.calculadora.resultado.value=resultado;
+        }
+    </script>
+</body>
+</html>
